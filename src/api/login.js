@@ -1,7 +1,9 @@
 import axios from 'axios'
-const BASE_URL = 'http://localhost:8080/jeecg-boot'
+const BASE_URL = process.env.VUE_APP_BASE_API
+console.log(BASE_URL);
 import { Message } from 'element-ui'
 export async function login(_data) {
+	console.log(BASE_URL);
 	return new Promise((res, rej) => {
 		axios.request({
 			url: BASE_URL + '/sys/login',
