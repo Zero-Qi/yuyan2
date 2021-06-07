@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "微软雅黑";
+}
+body,
+html {
+  /* height: 100%; */
+  font-size: 16px;
+  /* background: #f0f2f5; */
+  /* background: rgb(0, 0, 0); */
+}
+.el-submenu .el-submenu__title:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+.el-dialog__header {
+  padding: 0;
+}
+.el-dialog__footer {
+  text-align: right;
+  box-sizing: border-box;
+  padding: 0;
+}
+.generalButton {
+  background: #2a689f;
+  color: #fff;
+}
+.generalButton:hover {
+  background: #2a689f;
+  color: #fff;
+}
+.generalButton:focus {
+  background: #2a689f;
+  color: #fff;
+}
+.el-table__expand-icon .el-icon-arrow-right:before {
+  content: "\e6d9" !important;
+  border: 1px solid #ccc;
+  padding: 0.0714rem;
+}
+.el-table__expand-icon {
+  transform: rotate(0deg);
+}
+.el-table__expand-icon--expanded .el-icon-arrow-right:before {
+  content: "\e6d8" !important;
+  border: 0.0714rem solid #ccc;
+  padding: 0.0714rem;
+  margin-right: 0.2857rem;
+}
+.a {
+  border: none !important;
+  background: #fff !important;
+}
+.a td {
+  border-bottom: 1px solid #f5f6f7 !important;
+  font-weight: bold;
+  font-family: "微软雅黑";
+  border: none;
+}
+.el-alert{
+  border: .116667rem #ACD9FC solid;
+}
