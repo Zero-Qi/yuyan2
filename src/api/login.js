@@ -1,12 +1,10 @@
 import axios from 'axios'
-const BASE_URL = process.env.VUE_APP_BASE_API
-console.log(BASE_URL);
 import { Message } from 'element-ui'
+const BASE_URL = 'http://172.16.1.12:8080/jeecg-boot'
 export async function login(_data) {
-	console.log(BASE_URL);
 	return new Promise((res, rej) => {
 		axios.request({
-			url: BASE_URL + '/sys/login',
+			url: 'http://192.168.2.4:8080/jeecg-boot/sys/login',
 			data: {..._data},
 			method: 'POST'
 		}).then(resp => {

@@ -123,7 +123,7 @@ let routes=[
           },
           {
             path: '/zhuanjiaguanli',
-            name: '专家管理',
+            name: '专家管理1',
             component: () => import('components/basicInformationmanage/zhuanjiaManage.vue'),
           },
         ]

@@ -1,5 +1,5 @@
 <template>
-  <div id="myChart1"  :style="{ width: '300px', height: '200px'}"></div>
+  <div id="myChart2" :style="{ width: '18rem', height: '200px' }"></div>
 </template>
 
 <script>
@@ -16,7 +16,7 @@ export default {
   methods: {
     drawLine() {
       // 基于准备好的dom，初始化echarts实例
-      let myChart1 = this.$echarts.init(document.getElementById("myChart1"));
+      let myChart2 = this.$echarts.init(document.getElementById("myChart2"));
       // 绘制图表
       let index = 0;
       var img =
@@ -27,7 +27,7 @@ export default {
         "#2878CA",
       ];
 
-      myChart1.setOption({
+      myChart2.setOption({
         title: {
           text: "",
           x: "center",
@@ -55,9 +55,7 @@ export default {
         tooltip: {
           trigger: "item",
         },
-        legend: {
-      
-        },
+
         series: [
           {
             type: "pie",
@@ -122,5 +120,5 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 </style>

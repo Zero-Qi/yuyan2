@@ -6,7 +6,7 @@ module.exports = {
 	devServer: {
 		proxy: {
 			'/api': {
-				target: 'http://192.168.2.24:8080/jeecg-boot',
+				target: 'http://192.168.2.4:8080/jeecg-boot',
 				ws: true,
 				changeOrigin: true,
 				pathRewrite: {

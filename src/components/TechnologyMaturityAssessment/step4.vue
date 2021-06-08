@@ -47,7 +47,11 @@
         </el-row>
       </div>
       <div>
-        <el-button class="generalButton" id="check"
+        <reportdialog
+        :show.sync="show"
+            @close="close"
+            @ok="ok"/>
+        <el-button class="generalButton" id="check" @click="open"
           >查看成熟度提升统计</el-button
         >
       </div>
@@ -103,7 +107,9 @@
 
 <script>
 import { hz, downfile } from "api/jscsdpg";
+import reportdialog from './step/reportdialog.vue';
 export default {
+  components: { reportdialog },
   data() {
     return {
       id: "",
@@ -111,6 +117,7 @@ export default {
       tableData: [],
       active: 3,
       form: {},
+      show: false
     };
   },
   methods: {
@@ -174,10 +181,22 @@ export default {
         console.log(res);
       });
     },
+      ok(data) {
+      this.show = false;
+      console.log(data);
+      this.tableData = data;
+    },
+    close() {
+      this.show = false;
+    },
+    open() {
+      this.show = true;
+    },
+    // 更
   },
   mounted() {
     // this.$nextTick(() => {
-      this.hz();
+      // this.hz();
     // });
   },
 };

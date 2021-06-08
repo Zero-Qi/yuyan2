@@ -61,3 +61,6 @@ html {
 .el-alert{
   border: .116667rem #ACD9FC solid;
 }
+.customWidth {
+  width: 80%;
+}

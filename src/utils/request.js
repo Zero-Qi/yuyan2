@@ -4,7 +4,7 @@ import {store} from '../store'
 import { Message } from 'element-ui'
 import router from '@/router/index.js'
 const service = axios.create({
-    baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url
+    baseURL: process.env.NODE_ENV === 'production' ? '' :'/api', // url = base url + request url
     // baseURL: process.env.NODE_ENV === 'production' ? '' :'/api',
     withCredentials: true, // 当跨域请求时发送cookie
     timeout: 1000 * 8 // request timeout
