@@ -21,11 +21,11 @@ export default {
       // 绘制图表
       myChart.setOption({
         title: {
-          text: "",
+          text: "中期成熟度评价",
           left: "20px",
           textStyle: {
-            color: "#436EEE",
-            fontSize: 17,
+            color: "#404040",
+            fontSize: 12,
           },
         },
         tooltip: {

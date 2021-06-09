@@ -1,6 +1,6 @@
 <template>
   <div class="div1">
-    <img src="~@/assets/img/img1.png" alt="" />
+    <img src="~@/assets/img/img2.png" alt="" />
     <div class="div2">已完成计划</div>
      <div class="div3"><span>32</span><span>项</span><span class="mm">占比:</span><span>16%</span></div>
   </div>

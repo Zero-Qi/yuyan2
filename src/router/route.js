@@ -112,7 +112,7 @@ let routes=[
             component: () => import('components/TechnologyMaturityAssessment/step4.vue'),
           },
           {
-            path: '/engineering',
+            path: '/engineeringInformation',
             name: '工程信息评估面板',
             component: () => import('components/ComprehensiveInformation/engineeringInformation.vue'),
           },

@@ -152,7 +152,7 @@
                 {
             icon:'el-icon-coordinate',
             label:'工程信息看板',
-            index:'/engineering',
+            index:'/engineeringInformation',
             children:[]
           },
            {

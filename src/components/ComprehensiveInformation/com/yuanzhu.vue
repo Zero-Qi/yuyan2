@@ -1,11 +1,16 @@
 <template>
-  <div id="myChart3" :style="{ width: '250px', height: '270px' }"></div>
+  <div id="myChart3"  :style="{height:height,width:width}"></div>
 </template>
 
 <script>
 import axios from "axios";
 export default {
   name: "hello",
+  props: {
+    height: { type: String, default: "80vh" },
+    width: { type: String, default: "100%" },
+    options: { type: Object, default: () => {} }
+  },
   data() {
     return {
       msg: "Welcome to Your Vue.js App",

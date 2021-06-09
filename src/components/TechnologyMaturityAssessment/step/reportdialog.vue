@@ -10,7 +10,7 @@
  <el-col :span="24" :offset="12"><span>成熟度统计分析</span></el-col>
   <el-row >
   <el-col :span="18"><div id="m1"><maturityStatistics /></div></el-col>
-  <el-col :span="6"><div id="m3"><shan /> </div><div id="m2"><yuanzhu/></div></el-col>
+  <el-col :span="6"><div id="m3"><shan /> </div><div id="m2"><yuanzhu :width="width" :height="height"/></div></el-col>
 </el-row>
  <el-col :span="24" :offset="12">  <div id="end"><el-button size='mini' @click="close">返回</el-button></div>
 </el-col>
@@ -32,7 +32,10 @@ export default {
     return {
       multipleSelection: [],
       visible: this.show,
+      width:"250px",
+      height: "270px"
     };
+
   },
   props: {
     show: {
