@@ -1,5 +1,5 @@
 <template>
-  <div id="myChart3"  :style="{height:height,width:width}"></div>
+  <div :id="mc"  :style="{height:height,width:width}"></div>
 </template>
 
 <script>
@@ -9,7 +9,8 @@ export default {
   props: {
     height: { type: String, default: "80vh" },
     width: { type: String, default: "100%" },
-    options: { type: Object, default: () => {} }
+    options: { type: Object, default: () => {} },
+    mc: { type: String, default: "main4" },
   },
   data() {
     return {
@@ -22,9 +23,9 @@ export default {
   methods: {
     drawLine() {
       // 基于准备好的dom，初始化echarts实例
-      let myChart3 = this.$echarts.init(document.getElementById("myChart3"));
+      let mc1 = this.$echarts.init(document.getElementById(this.mc));
       // 绘制图表
-      myChart3.setOption({
+      mc1.setOption({
         tooltip: {
           trigger: "axis",
           axisPointer: {
